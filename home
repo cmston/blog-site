@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clouston.</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+<style>
+html {
+	  font-family: Roboto;
+}
+
+.nav {
+  padding: 15px;
+  border-bottom: solid;
+}
+
+.name {
+  font-size: 22px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 6px 15px 7px 7px;
+  font-size: 18px;
+  font-family: Roboto;
+}
+
+h3 {
+	padding-top: 10px;
+	  font-family: Roboto;
+}
+
+h5 {
+	font-size:16px;
+	font-family: Roboto;
+	color: grey;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: auto;
+	width: 450px;
+
+}
+
+.post-img {
+	width: 450px;
+	height: automatic;
+	overflow: hidden;
+}
+
+.post {
+	width:450px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top:30px;
+}
+</style>
+</head>
+<div class="nav">
+  <ul>
+    <li class="name">Clouston.</li>
+    <li class="navlink"><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+
+<div class="container">
+<div class="row">
+
+<div class="col-lg-3">
+</div>
+
+<div class="col-lg-6">
+
+<div class="post">
+<h5>Project</h5>
+<div class="post-img">
+<img src="matam-jaswanth-334889.jpg" class="img-responsive">
+</div>
+<h2>Reducing costly care interactions for a digital first ISP</h2>
+<p>Our challenge was to reduce these costly interactions while still providing the high level of care our customers expected. Our challenge was to reduce these costly interactions while still providing the high level of care our customers expected.</p>
+<h5><a href="#">Read more...</a></h5>
+</div>
+
+<div class="post">
+<h5>Blog</h5>
+<div class="post-img">
+<img src="hope-house-press-127593.jpg" class="img-responsive">
+</div>
+<h2>Learn one thing a year: 2017 - Coding</h2>
+<p>A friend recently explained to me the importance of practising restraint when it comes to setting goals. I took her advice and tried my hand at coding. See how I fared over 12 months.</p>
+<h5><a href="#">Read more...</a></h5>
+</div>
+
+<div class="post">
+<h5>Project</h5>
+<div class="post-img">
+<img src="matam-jaswanth-334889.jpg" class="img-responsive">
+</div>
+<h2>Reducing costly care interactions for a digital first ISP</h2>
+<p>Our challenge was to reduce these costly interactions while still providing the high level of care our customers expected. Our challenge was to reduce these costly interactions while still providing the high level of care our customers expected.</p>
+<h5><a href="#">Read more...</a></h5>
+</div>
+
+</div>
+
+<!--column 3-->
+<div class="col-lg-3">
+</div>
+</div>
+</div>
+
+</html>
