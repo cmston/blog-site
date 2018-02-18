@@ -7,6 +7,11 @@ html {
   border-bottom: solid;
 }
 
+.container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .name {
   font-size: 22px;
   padding-right: 20px;
