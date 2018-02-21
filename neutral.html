@@ -23,6 +23,20 @@
 
   window.addEventListener('DOMContentLoaded', init)
 </script>
+<script>
+  for (var i = 0; i < data.length; i++) {
+$(‘.post’).append(
+‘<div class=”article” style=”background-image: url( ‘ +
+data[i].img + ‘.jpg)”>’ +
+‘<div class=”text”>’ +
+‘<h1>’ + data[i].title + ‘</h1>’+
+data[i].body +
+‘</div> ‘ + ‘<div class=”meta-info”>’ + ‘<img src =”’ + data[i].img + ‘.jpg”>’+
+‘<div class=”date”>’ + data[i].date + ‘</div>’ +
+‘</div>’ +
+‘</div>’);
+}
+  </script>
 </head>
 <body>
 
@@ -88,48 +102,9 @@
     </div>
     <div id="menu1" class="tab-pane fade">
            <h3>Football matches</h3>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Home</th>
-                  <th>Away</th>
-                  <th>Competition</th>
-                  <th>Date & Time</th>
-                  <th>Stadium</th>
-                  <th>Ticket Status</th>
-                  <th><!--ticketpurchase--></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Crystal Palace</td>
-                  <td>Watford</td>
-                  <td>Premier League</td>
-                  <td>Friday 23rd Feb, 19:00</td>
-                  <td><a href=#>Selhurst Park, SE25</a></td>
-                  <td>General sale available</td>
-                  <td><a href=#>BUY</a></td>
-                </tr>
-                <tr>
-                  <td>England</td>
-                  <td>Wales</td>
-                  <td>Six Nations</td>
-                  <td>Saturday 24th Feb, 13:00</td>
-                  <td><a href="https://goo.gl/maps/rzjVABkzJKz" target="_blank">Twickenham, TW2</a></td>
-                  <td>Resale only</td>
-                  <td><a href=#>BUY</a></td>
-                </tr>
-                <tr>
-                  <td>Chelsea</td>
-                  <td>Barcelona</td>
-                  <td>Champions League</td>
-                  <td>Saturday 24th Feb, 18:30</td>
-                  <td><a href="https://goo.gl/maps/rzjVABkzJKz" target="_blank">Stamford Bridge, SW6</a></td>
-                  <td>Members only, 3rd party resale</td>
-                  <td><a href=#>BUY</a></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="post">
+              
+      </div>
     </div>
     <div id="menu2" class="tab-pane fade">
             <h3>Rugby matches</h3>
