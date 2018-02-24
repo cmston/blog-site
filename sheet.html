@@ -6,17 +6,14 @@
 </body>
 
 <script>
-    function init() {
- Tabletop.init( { key: ‘https://docs.google.com/spreadsheets/d/19N3cgEsXSWak5I_jUFfgwQ5RJd1Agzs2fllmesujX04/edit?usp=sharing',
- callback: function(data, tabletop) { 
- console.log(data)
- },
- simpleSheet: true } )
+function init() {
+Tabletop.init( { key: ‘19N3cgEsXSWak5I_jUFfgwQ5RJd1Agzs2fllmesujX04’,
+callback: showInfo,
+simpleSheet: true } )
 }
-window.addEventListener(‘DOMContentLoaded’, init)
-</script>
-    <script>
-    for (var i = 0; i < data.length; i++) {
+function showInfo(data, tabletop) {
+console.log(data);
+for (var i = 0; i < data.length; i++) {
 $(‘.post’).append(
 ‘<div class=”article” style=”background-image: url( ‘ +
 data[i].img + ‘.jpg)”>’ +
@@ -28,7 +25,8 @@ data[i].body +
 ‘</div>’ +
 ‘</div>’);
 }
-        
+}
+window.addEventListener(‘DOMContentLoaded’, init)
     </script>
 </html>
 
