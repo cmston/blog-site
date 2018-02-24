@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class=”post”>
+</div>
+</body>
+
 <script>
     function init() {
  Tabletop.init( { key: ‘https://docs.google.com/spreadsheets/d/19N3cgEsXSWak5I_jUFfgwQ5RJd1Agzs2fllmesujX04/edit?usp=sharing',
@@ -8,7 +15,20 @@
 }
 window.addEventListener(‘DOMContentLoaded’, init)
 </script>
+    <script>
+    for (var i = 0; i < data.length; i++) {
+$(‘.post’).append(
+‘<div class=”article” style=”background-image: url( ‘ +
+data[i].img + ‘.jpg)”>’ +
+‘<div class=”text”>’ +
+‘<h1>’ + data[i].title + ‘</h1>’+
+data[i].body +
+‘</div> ‘ + ‘<div class=”meta-info”>’ + ‘<img src =”’ + data[i].img + ‘.jpg”>’+
+‘<div class=”date”>’ + data[i].date + ‘</div>’ +
+‘</div>’ +
+‘</div>’);
+}
+        
+    </script>
+</html>
 
-<script>
-    document.write ('data[i].league')
-</script>
