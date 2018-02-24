@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-function init() {
-Tabletop.init( { key: ‘19N3cgEsXSWak5I_jUFfgwQ5RJd1Agzs2fllmesujX04’,
-callback: showInfo,
-simpleSheet: true } )
-}
-function showInfo(data, tabletop) {
-console.log(data);
-for (var i = 0; i < data.length; i++) {
-$(‘.post’).append(
-‘<div class=”article” style=”background-image: url( ‘ +
-data[i].img + ‘.jpg)”>’ +
-‘<div class=”text”>’ +
-‘<h1>’ + data[i].title + ‘</h1>’+
-data[i].body +
-‘</div> ‘ + ‘<div class=”meta-info”>’ + ‘<img src =”’ + data[i].img + ‘.jpg”>’+
-‘<div class=”date”>’ + data[i].date + ‘</div>’ +
-‘</div>’ +
-‘</div>’);
-}
-}
-window.addEventListener(‘DOMContentLoaded’, init)
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"</script>
+    <script src="http://chriszarate.github.io/sheetrock/dist/sheetrock.min.js"</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script>
+        var spreadsheet = "https://docs.google.com/spreadsheets/d/19N3cgEsXSWak5I_jUFfgwQ5RJd1Agzs2fllmesujX04/edit?usp=sharing"
+        
+        $(document).ready(function(){
+            $('#classes').sheetrock({
+                url: spreadsheet
+            });
+        });
     </script>
     </head>
 <body>
-<div class=”post”>
-</div>
+    <table id="classes" class="table table-condensed table-striped"></table>
 </body>
-
 </html>
-
+   
