@@ -1,11 +1,20 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Neutral Sports</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.1/dist/sheetrock.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script>
+    var spreadsheet = "https://docs.google.com/spreadsheets/d/19N3cgEsXSWak5I_jUFfgwQ5RJd1Agzs2fllmesujX04/edit#gid=0";
+    
+    $(document).ready(function(){
+      $('#classes').sheetrock({
+        url: spreadsheet,
+  
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -71,48 +80,7 @@
     </div>
     <div id="menu1" class="tab-pane fade">
            <h3>Football matches</h3>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Home</th>
-                  <th>Away</th>
-                  <th>Competition</th>
-                  <th>Date & Time</th>
-                  <th>Stadium</th>
-                  <th>Ticket Status</th>
-                  <th><!--ticketpurchase--></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Crystal Palace</td>
-                  <td>Watford</td>
-                  <td>Premier League</td>
-                  <td>Friday 23rd Feb, 19:00</td>
-                  <td><a href=#>Selhurst Park, SE25</a></td>
-                  <td>General sale available</td>
-                  <td><a href=#>BUY</a></td>
-                </tr>
-                <tr>
-                  <td>England</td>
-                  <td>Wales</td>
-                  <td>Six Nations</td>
-                  <td>Saturday 24th Feb, 13:00</td>
-                  <td><a href="https://goo.gl/maps/rzjVABkzJKz" target="_blank">Twickenham, TW2</a></td>
-                  <td>Resale only</td>
-                  <td><a href=#>BUY</a></td>
-                </tr>
-                <tr>
-                  <td>Chelsea</td>
-                  <td>Barcelona</td>
-                  <td>Champions League</td>
-                  <td>Saturday 24th Feb, 18:30</td>
-                  <td><a href="https://goo.gl/maps/rzjVABkzJKz" target="_blank">Stamford Bridge, SW6</a></td>
-                  <td>Members only, 3rd party resale</td>
-                  <td><a href=#>BUY</a></td>
-                </tr>
-              </tbody>
-            </table>
+                <table id="classes" class="table table-condensed table-striped"></table>
     </div>
     <div id="menu2" class="tab-pane fade">
             <h3>Rugby matches</h3>
