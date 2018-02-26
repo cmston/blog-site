@@ -10,7 +10,7 @@
     $(document).ready(function() {
       $('#classes').sheetrock({
         url: spreadsheet,
-        query: "select A, B, C, D, E where C='Arsenal' or C='Chelsea' or C='Crystal Palace' or C='West Ham'"
+        query: "select A, B, C, D, E where C='Arsenal' or C='Chelsea' or C='Crystal Palace' or C='West Ham' or C='Fulham' or C='Millwall' or C='Queens Park Rangers' order by A"
       });
     });
   </script>
@@ -29,12 +29,16 @@
 
     <ul class="nav nav-pills">
       <li class="active"><a data-toggle="pill" href="#home">London</a></li>
+      <li><a data-toggle="pill" href="#manchester">Manchester</a></li>
+      <li><a data-toggle="pill" href="#liverpool">Liverpool</a></li>
     </ul>
 
     <div class="tab-content">
       <div id="home" class="tab-pane fade in active">
         <ul class="nav nav-tabs">
           <li class="active"><a data-toggle="tab" href="#home">Football</a></li>
+          <li><a data-toggle="tab" href="#rugby">Rugby</a></li>
+          <li><a data-toggle="tab" href="#cricket">Cricket</a></li>
         </ul>
 
         <div class="tab-content">
